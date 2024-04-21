@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/textViewPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewJudul"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        android:text="Kamu Yakin Ingin Logout?" />
+
+    <Button
+        android:id="@+id/buttonYa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPesan"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Ya" />
+
+    <Button
+        android:id="@+id/buttonTidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonYa"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/buttonYa"
+        android:text="Tidak" />
+</RelativeLayout>

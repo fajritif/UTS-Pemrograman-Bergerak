@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASHAMTIF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Setoran Hafalan Al-Qur'an Mahasiswa Teknik Informatika"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/textViewNamaSurah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Surah"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_nama_surah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Surah"
+        android:height="45dp"
+        android:minHeight="48dp"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/textViewKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keterangan"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keterangan"
+        android:height="45dp"
+        android:minHeight="48dp"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+
+
+</LinearLayout>

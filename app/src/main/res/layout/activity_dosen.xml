@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewJudulAplikasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ASHA"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayoutHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewNamaDosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Dosen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_nama_dosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Dosen"
+                android:height="45dp"
+                android:minHeight="48dp"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textViewNIPDosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIP Dosen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_nip_dosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NIP Dosen"
+                android:height="48dp"
+                android:minHeight="48dp"
+                android:inputType="text" />
+
+
+            <Button
+                android:id="@+id/buttonSelanjutnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Selanjutnya" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

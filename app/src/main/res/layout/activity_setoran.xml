@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASHAMTIF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Setoran Hafalan Al-Qur'an Mahasiswa Teknik Informatika"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/textViewTanggalSetoran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Setoran"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_tanggal_setoran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Setoran"
+        android:height="45dp"
+        android:minHeight="48dp"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/textViewMulaiAyat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mulai Ayat"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_MulaiAyat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mulai Ayat"
+        android:height="45dp"
+        android:minHeight="48dp"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/textViewSampaiAyat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sampai Ayat"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_SampaiAyat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sampai Ayat"
+        android:height="45dp"
+        android:minHeight="48dp"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/textViewCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catatan"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_Catatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Catatan"
+        android:height="45dp"
+        android:minHeight="48dp"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+
+
+</LinearLayout>

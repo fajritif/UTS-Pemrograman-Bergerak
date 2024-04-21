@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_asha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASHAMTIF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_aplikasi_setoran_hafalan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aplikasi_setoran_hafalan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Setoran Hafalan Al-Qur'an Mahasiswa Teknik Informatika"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_asha" />
+
+    <EditText
+        android:id="@+id/et_tanggal_setoran"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Setoran"
+        android:inputType="date"
+        android:height="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_aplikasi_setoran_hafalan"
+        android:layout_marginTop="16dp"/>
+
+
+    <EditText
+        android:id="@+id/et_mulai_ayat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mulai Ayat"
+        android:inputType="number"
+        android:height="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_tanggal_setoran"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_sampai_ayat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Sampai Ayat"
+        android:height="48dp"
+        android:minHeight="48dp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_mulai_ayat"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_catatan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Catatan"
+        android:minHeight="48dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_sampai_ayat"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_catatan"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
