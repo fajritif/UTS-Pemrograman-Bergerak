@@ -17,14 +17,14 @@ public class RiwayatActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riwayat);
         View login;
-        login = findViewById(R.id.btn_simpan);
+        login = findViewById(R.id.button_selanjutnya);
 
         login.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.btn_simpan){
+        if (v.getId() == R.id.button_selanjutnya){
             Intent moveIntent = new Intent(RiwayatActivity.this, SetoranActivity.class);
             startActivity(moveIntent);
         }
